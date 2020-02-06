@@ -1,6 +1,6 @@
-/**
+/*
  * The MIT License
- * Copyright (c) 2014 Ilkka Seppälä
+ * Copyright © 2014-2019 Ilkka Seppälä
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,23 +20,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package com.iluwatar.collectionpipeline;
 
 /**
  * A Car class that has the properties of make, model, year and category.
  */
 public class Car {
-  private String make;
-  private String model;
-  private int year;
-  private Category category;
+  private final String make;
+  private final String model;
+  private final int year;
+  private final Category category;
 
   /**
    * Constructor to create an instance of car.
-   * @param make the make of the car
-   * @param model the model of the car
+   *
+   * @param make       the make of the car
+   * @param model      the model of the car
    * @param yearOfMake the year of built of the car
-   * @param category the {@link Category} of the car
+   * @param category   the {@link Category} of the car
    */
   public Car(String make, String model, int yearOfMake, Category category) {
     this.make = make;
@@ -102,7 +104,7 @@ public class Car {
   public int getYear() {
     return year;
   }
-  
+
   public Category getCategory() {
     return category;
   }
